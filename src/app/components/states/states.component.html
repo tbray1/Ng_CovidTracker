@@ -1,0 +1,21 @@
+<div class="ui inverted dimmer" [class.active]='loading'>
+    <div class="ui text loader">Loading</div>
+</div>
+<div class="container">
+<div class="card">
+<div class="jumbotron bg-white text-center">
+    <h1 class="display-4">United States Statistics</h1>
+    <hr>
+    <div class="mx-auto">
+        <div class="form-group col-lg-5 mx-auto">
+            <label for="states">Select States</label>
+            <select name="" class="form-control" id="states" #input (change)="updateStats(input.value)">
+                <option value="{{s.state}}" *ngFor="let s of stateData">{{s.state}}</option>
+            </select>
+        </div>
+        <app-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalRecovered]='totalRecovered'
+        [totalDeaths]='totalDeaths'></app-card>
+    </div>
+    
+</div>
+</div>

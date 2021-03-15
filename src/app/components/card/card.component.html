@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="card col p-3 m-6">
+        <div class="ui tiny statistic">
+            <div class="ui tiny bg-info text-white label">
+                <h4>Confirmed</h4>
+            </div>
+            <div class="value">
+                {{totalConfirmed | number}}
+            </div>
+        </div>
+    </div>
+    <div class="card col p-3 m-6">
+        <div class="ui tiny statistic">
+            <div class="ui tiny bg-success text-white label">
+                <h4>Recovered</h4>
+            </div>
+            <div class="value">
+            {{totalRecovered | number}}
+                
+            </div>
+        </div>
+    </div>
+    <div class="card col p-3 m-6">
+        <div class="ui tiny statistic">
+            <div class="ui tiny bg-danger text-white label">
+                <h4>Deaths</h4>
+            </div>
+            <div class="value">
+                {{totalDeaths | number}}
+            </div>
+        </div>
+    </div>
+    <div class="card col p-3 m-6">
+        <div class="ui tiny statistic">
+            <div class="ui tiny bg-warning text-white label">
+                <h4>Active</h4>
+            </div>
+            <div class="value">
+                {{totalActive | number}}
+            </div>
+        </div>
+    </div>
+
+</div>

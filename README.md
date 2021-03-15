@@ -1,6 +1,8 @@
 # CovidNgapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+This project tracks global/US coronavirus data by fecthing data from lmao corona api
+
+technology stack includes: Angular, Bootstrap, and Semantic UI
 
 ## Development server
 
